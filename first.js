@@ -1,10 +1,51 @@
-function func(num){
-    let sum = 1;
-    let cnt = 0;
-    for(let i = num; i > 0; i = Math.floor(i / 10)){
-        sum = i % 10; 
+function calculator(a, c, b){
+    if(c === '+'){
+        return a + b;
     }
- }
+    if(c === '-'){
+        return a - b;
+    }
+    if(c === '*'){
+        return a * b;
+    }
+    if(c === '/'){
+        return Math.floor(a / b);
+    }
+    if(c === '%'){
+        return a % b;
+    }
+    return "Invalid operator";
+}
+console.log(calculator(12, '%', 5));
+
+
+
+
+
+// tast4
+// function Vsechisla(a, b){
+//     let cnt = "";
+//     for(let i = a; i <= b; i++){
+//         cnt += i;
+//         if(i < b){
+//             cnt += ", ";
+//         }
+//     }
+//     return cnt;
+// }
+// console.log(Vsechisla(4,5));
+
+
+
+
+
+
+// function removedigit(num, dig){
+//     return Number(('' + num).split(dig).join(''));
+// }
+// console.log(removedigit(1121212, 1));
+
+ 
 
 
 
@@ -96,14 +137,6 @@ function func(num){
 //     return sum + '';
 // }
 // console.log(add(1378));
-
-
-
-
-// function removedigit(num, dig){
-//     return Number(('' + num).split(dig).join(''));
-// }
-// console.log(removedigit(1121212, 1));
 
 
 
