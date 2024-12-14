@@ -531,6 +531,8 @@ IIFE (Immediately Invoked Function Expression) — это функция, кот
   // Код, который будет выполнен сразу
   console.log("Hello, World!");
 })();
+```
+
 ```javascript
 // IIFE пример
 (function() {
