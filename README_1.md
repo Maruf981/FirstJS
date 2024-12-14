@@ -226,7 +226,9 @@ function example() {
 example();
 ```
 ### TDZ с const:
-```function example() {
+
+```
+function example() {
   console.log(b); // Ошибка! Переменная b в TDZ.
   const b = 10;
 }
