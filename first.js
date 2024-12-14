@@ -177,19 +177,19 @@ console.log(calculator(12, '%', 5));
 
 
 
-// function notusefor(num){
-//     let i = 1;
-//     let sum = 0;
-//     while(i <= num){
-//         sum += i;
-//         if(i < num){
-//             sum += ', ';
-//         }
-//         i++;
-//     }
-//     return sum;
-// }
-// console.log(notusefor(5));
+function notusefor(num){
+    let i = 1;
+    let sum = 0;
+    while(i <= num){
+        sum += i;
+        if(i < num){
+            sum += ', ';
+        }
+        i++;
+    }
+    return sum;
+}
+console.log(notusefor(5));
 
 
 
