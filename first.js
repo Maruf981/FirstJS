@@ -1,22 +1,45 @@
-function calculator(a, c, b){
-    if(c === '+'){
-        return a + b;
-    }
-    if(c === '-'){
-        return a - b;
-    }
-    if(c === '*'){
-        return a * b;
-    }
-    if(c === '/'){
-        return Math.floor(a / b);
-    }
-    if(c === '%'){
-        return a % b;
-    }
-    return "Invalid operator";
-}
-console.log(calculator(12, '%', 5));
+
+
+
+// function Pow(a,b){
+//     if(b == 0) return 1;
+//     return a * Pow(a, b - 1)
+// }
+// console.log(Pow(2,3));
+
+
+
+// function factorialrecurs(num){
+//     if (num == 0) return 1;
+//     return num * factorial(num-1);
+// }
+// console.log(factorial(5));
+
+
+//---------------------------------------------------------------------------
+
+
+
+
+// function calculator(a, c, b){
+//     if(c === '+'){
+//         return a + b;
+//     }
+//     if(c === '-'){
+//         return a - b;
+//     }
+//     if(c === '*'){
+//         return a * b;
+//     }
+//     if(c === '/'){
+//         return Math.floor(a / b);
+//     }
+//     if(c === '%'){
+//         return a % b;
+//     }
+//     return "Invalid operator";
+// }
+// console.log(calculator(12, '%', 5));
 
 
 
@@ -177,19 +200,19 @@ console.log(calculator(12, '%', 5));
 
 
 
-function notusefor(num){
-    let i = 1;
-    let sum = 0;
-    while(i <= num){
-        sum += i;
-        if(i < num){
-            sum += ', ';
-        }
-        i++;
-    }
-    return sum;
-}
-console.log(notusefor(5));
+// function notusefor(num){
+//     let i = 1;
+//     let sum = 0;
+//     while(i <= num){
+//         sum += i;
+//         if(i < num){
+//             sum += ', ';
+//         }
+//         i++;
+//     }
+//     return sum;
+// }
+// console.log(notusefor(5));
 
 
 
