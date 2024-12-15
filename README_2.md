@@ -21,9 +21,9 @@ function factorial(n) {
 console.log(factorial(5)); // Вывод: 120
 ```
 Реализация:
-```
+```javascript
 
- ```function fibonacci(n) {
+ function fibonacci(n) {
   if (n === 0) return 0; // Базовый случай
   if (n === 1) return 1; // Базовый случай
   return fibonacci(n - 1) + fibonacci(n - 2); // Рекурсивный случай
@@ -41,7 +41,7 @@ console.log(fibonacci(6)); // Вывод: 8
 ### Хвостовая рекурсия
 
  
-```
+```javascript
  
 function factorialTailRec(n, acc = 1) {
   if (n === 1) return acc; // Базовый случай
@@ -83,7 +83,7 @@ closureExample(); // Вывод: "Я из внешней функции"
 
 - Замыкания для создания приватных данных
 - Замыкания используются для реализации данных, которые нельзя напрямую изменить извне.
- ```
+ ```javascript
 function createCounter() {
   let count = 0; // Приватная переменная
 
