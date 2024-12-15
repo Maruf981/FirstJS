@@ -435,7 +435,7 @@ do {
 
 В JavaScript существует несколько типов функций, каждый из которых имеет свои особенности и применения.
 
-## 1. Декларация функции (Function Declaration)
+# 1. Декларация функции (Function Declaration)
 
 Декларация функции позволяет создать именованную функцию. Такие функции могут быть вызваны до их объявления благодаря механизму "поднятия" (hoisting).
 ```javascript
@@ -446,7 +446,7 @@ function greet() {
   console.log("Hello, World!");
 }
 ```
-## 2. Функция-выражение (Function Expression)
+# 2. Функция-выражение (Function Expression)
 
 Функция-выражение — это функция, присваиваемая переменной. Она не имеет имени и может быть вызвана только после её объявления.
 ```javascript
@@ -460,7 +460,20 @@ const greet = function () {
 // Вызов после объявления
 greet(); // "Hello, World!"
 ```
-## 3. Анонимные функции (Anonymous Functions)
+## Пример разницы функции выражение и анонимные
+ 
+```javascript
+// Function Expression (именованное)
+const sayHi = function greeting() {
+    console.log("Hello!");
+};
+
+// Function Expression (анонимное)
+const sayHi = function() {
+    console.log("Hello!");
+};
+```
+# 3. Анонимные функции (Anonymous Functions)
 
 Анонимные функции не имеют имени. Они часто используются как аргументы для других функций, например, в обработчиках событий или коллбэках.
 ```javascript
@@ -475,9 +488,9 @@ document.getElementById("myButton").addEventListener("click", function () {
 });
 ```
 
-## 4. Стрелочные функции (Arrow Functions)
+# 4. Стрелочные функции (Arrow Functions)
 
-# Стрелочные функции в JavaScript
+ 
 
 - Стрелочные функции (arrow functions) — это компактная форма записи обычных функций, введенная в ECMAScript 6 (ES6). Они обладают рядом особенностей:
 # Отличие стрелочных функций от обычных функций в JavaScript
