@@ -1,3 +1,75 @@
+// function isPalindrome(num, reversed = 0, original = num) {
+//     if (num === 0) return original === reversed;  
+//     return isPalindrome(Math.floor(num / 10), reversed * 10 + (num % 10), original);  
+// }
+
+ 
+// console.log(isPalindrome(12321));  
+// console.log(isPalindrome(12345));  
+
+
+
+// function MultTable(num, i = 1) {
+//     if (i > 10) return 0;  
+//     console.log(`${num} * ${i} = ${num * i}`);  
+//     return MultTable(num, i + 1);  
+// }
+ 
+// MultTable(5);
+
+
+
+ // function fibonacci(n) {
+//     if (n === 0) return 0;  
+//     if (n === 1) return 1;  
+ //     if (n === 3) return 1;  
+//     return fibonacci(n - 1) + fibonacci(n - 2);  
+//  }
+//  console.log(fibonacci(3));
+
+
+
+// function Rev(num){
+//     if(num === 0) return "";
+//     return num % 10 + Rev(Math.floor(num / 10));
+// }
+// console.log(Rev(12345));
+
+
+// function Closurplus(num){
+//     return function(plus){
+//         return num + plus;
+//     };
+// }
+// let result = Closurplus(5);
+// console.log(result(3));
+ 
+ 
+
+
+
+// function Multipl(num){
+//     if(num === 0) return 0;
+//     return num + Multipl(num - 1);
+// }
+// console.log(Multipl(10));
+// console.log(Multipl(7));
+// console.log(Multipl(5));
+
+
+
+
+// function Plus(num){
+//     let count = 0;
+//     return function(){
+//         count++;
+//         return count;
+//     };
+// }
+// let counter = Plus(1);
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
 
 
 
@@ -9,11 +81,11 @@
 
 
 
-// function factorialrecurs(num){
+// function factorialr(num){
 //     if (num == 0) return 1;
-//     return num * factorial(num-1);
+//     return num * factorialr(num-1);
 // }
-// console.log(factorial(5));
+// console.log(factorialr(5));
 
 
 //---------------------------------------------------------------------------
