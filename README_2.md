@@ -104,9 +104,9 @@ console.log(counter()); // 3
 
 ### Пример с несколькими функциями
 Замыкания позволяют создавать уникальные копии данных для разных функций.
-```
-javascript
-Копировать код```
+ 
+``` javascript
+ 
 function multiplier(factor) {
   return function (number) {
     return number * factor;
@@ -125,7 +125,7 @@ console.log(triple(5)); // 15
 ### Замыкание и цикл
 Замыкания часто используются для сохранения значений в циклах:
 
- ```
+ ```Javascript
 function createFunctions() {
   let functions = [];
 

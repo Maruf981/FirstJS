@@ -1,3 +1,51 @@
+ 
+
+
+// function evenodd(num){
+//     if(num % 2 === 0) return true;
+//     return false;
+      
+// }
+// console.log(evenodd(124));
+// console.log(evenodd(-41));
+// console.log(evenodd(16));
+
+
+
+// function division(a,b, min = Math.min(a,b)){
+     
+//     if(a % min === 0 && b % min === 0) return min;
+//     return  division(a,b, min - 1);
+// }
+// console.log(division(32,8));
+// console.log(division(8,12));
+// console.log(division(17,13));
+
+
+
+// function increas(num, i = 1) {
+  
+//     if (i > 10) return 0;  
+//     return num * i + increas(num, i + 1);  
+// }
+// console.log(increas(1));   
+// console.log(increas(6));  
+// console.log(increas(10));  
+ 
+
+
+
+// function multiply(num){
+//     let count = 0;
+//     if(num === 0) return 0;
+//     return count += num % 10 + multiply(Math.floor(num / 10));
+// }
+// console.log(multiply(111));
+// console.log(multiply(222));
+// console.log(multiply(333));
+
+//----------------------------------------------------
+
 // function isPalindrome(num, reversed = 0, original = num) {
 //     if (num === 0) return original === reversed;  
 //     return isPalindrome(Math.floor(num / 10), reversed * 10 + (num % 10), original);  
@@ -72,7 +120,6 @@
 // console.log(counter());
 
 
-
 // function Pow(a,b){
 //     if(b == 0) return 1;
 //     return a * Pow(a, b - 1)
@@ -90,6 +137,8 @@
 
 //---------------------------------------------------------------------------
 
+// const sum = (a,b,c) => (a * b) + 5;
+// console.log(sum(5,5,2));
 
 
 
