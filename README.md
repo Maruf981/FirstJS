@@ -504,7 +504,7 @@ document.getElementById("myButton").addEventListener("click", function () {
   
   ```javascript
   const add = (a, b) => a + b;
-```
+ 
 ```javascript
 // Внешняя функция
 function OuterFunction() {
@@ -521,8 +521,8 @@ obj.sayName(); // Вывод: 'Outer Function'
 ```
 
 
-## 5. IIFE (Immediately Invoked Function Expression)
-# IIFE (Immediately Invoked Function Expression) в JavaScript
+# 5. IIFE (Immediately Invoked Function Expression)
+## IIFE (Immediately Invoked Function Expression) в JavaScript
 
 IIFE (Immediately Invoked Function Expression) — это функция, которая выполняется сразу после ее объявления. Такой подход используется, чтобы создать локальную область видимости и избежать загрязнения глобального пространства имен. IIFE является полезным инструментом в JavaScript, особенно в ситуациях, когда нужно выполнить код немедленно и сохранить его изолированным.
 
