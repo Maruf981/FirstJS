@@ -1,12 +1,28 @@
-function Suf(suffix) {
-    return function(word) {
-        return word + suffix;
+function Suf(suffix){  // suffix = "ly"; иваз намешавад.
+    return function(word){ // word = total, hopeless, even, sure; при каждой вызове измениться
+        return word + suffix; // например word = total + suffix = ly === totally;
     };
 }
+const add = Suf('ly')
+console.log(add('total'));
+console.log(add('hopeless'));
+console.log(add('even'));
+console.log(add('sure'));
 
-const add = Suf("ly");
-console.log(add("hopeless"));  
-console.log(add("total")); 
+
+
+
+
+
+// function Suf(suffix) {
+//     return function(word) {
+//         return word + suffix;
+//     };
+// }
+
+// const add = Suf("ly");
+// console.log(add("hopeless"));  
+// console.log(add("total")); 
  
 
 

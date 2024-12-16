@@ -159,9 +159,9 @@ console.log(funcs[2]()); // 2
 
 ```javascript
 Копировать код
-function Suf(suffix) {       // 1. Это коробка
-    return function(word) {  // 3. Это ключ
-        return word + suffix;  // Ключ знает секрет (suffix) и может использовать его
+function Suf(suffix){  // suffix = "ly"; иваз намешавад.
+    return function(word){ // word = total, hopeless, even, sure; при каждой вызове измениться
+        return word + suffix; // например word = total + suffix = ly === totally;
     };
 }
 
