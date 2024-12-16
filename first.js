@@ -1,9 +1,57 @@
+function Suf(suffix) {
+    return function(word) {
+        return word + suffix;
+    };
+}
+
+const add = Suf("ly");
+console.log(add("hopeless"));  
+console.log(add("total")); 
  
 
 
+
+// function pow(a,b){
+//     if(b === 0) return 1;
+//     return a * pow(a, b - 1);
+// }
+// console.log(pow(2,2));
+// console.log(pow(2,3));
+// console.log(pow(2,4));
+
+
+
+
+// function twofactorial(n) {
+//     if (n < 0) {
+//         return undefined; 
+//     }
+//     if (n === 0 || n === 1) {
+//         return 1; 
+//     }
+//     return n * twofactorial(n - 2);
+// }
+// console.log(twofactorial(9));
+
+
+//  function addclosure(num){
+//     return function(add){
+//         return num + add;
+//     };
+//  }
+//  let res = addclosure(5);
+//  console.log(res(10));
+//  console.log(res(10));
+ 
+
+
+
 // function evenodd(num){
-//     if(num % 2 === 0) return true;
-//     return false;
+//     if(num < 0) num = -num;
+
+//     if(num === 0) return true;
+//     if(num === 1) return false;
+//     return evenodd(num - 2);
       
 // }
 // console.log(evenodd(124));
