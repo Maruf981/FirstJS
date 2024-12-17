@@ -1,28 +1,127 @@
-function Suf(suffix){  // suffix = "ly"; иваз намешавад.
-    return function(word){ // word = total, hopeless, even, sure; при каждой вызове измениться
-        return word + suffix; // например word = total + suffix = ly === totally;
-    };
-}
-const add = Suf('ly')
-console.log(add('total'));
-console.log(add('hopeless'));
-console.log(add('even'));
-console.log(add('sure'));
+// function ismultiply(num1){
+//     return (num2) => {
+//         return num2 % num1 === 0;
+// }
+// }
+// let add = ismultiply(3);
+// console.log(add(9));
+// console.log(add(10));
+ 
 
 
 
 
-
-
-// function Suf(suffix) {
-//     return function(word) {
-//         return word + suffix;
-//     };
+// function division(a, b) {
+//     return a % b === 0 ? true : false; division(a - b, b);
 // }
 
-// const add = Suf("ly");
-// console.log(add("hopeless"));  
-// console.log(add("total")); 
+// console.log(division(10, 5)); 
+// console.log(division(15, 4));   
+// console.log(division(12, 3));  
+ 
+
+
+
+//  function generator(num){
+//     return () => {
+//         console.log(num);
+//         num += 2; 
+//     };
+//  }
+//   let add = generator(2);
+//    add();
+//    add();
+  
+ 
+
+// function sumFibonacci(n, a = 1, b = 1, sum = 1) {
+//     if (n === 1) return sum;   
+//     return sumFibonacci(n - 1, b, a + b, sum + b);   
+// }
+// console.log(sumFibonacci(6));  
+// console.log(sumFibonacci(5));  
+// console.log(sumFibonacci(3));  
+
+
+// function average(){
+//     let count = 0;
+//     let sum = 0;
+//     return (num) => {
+//          sum += num;
+//          count++;
+//         return sum / count; 
+//     };
+// }
+// let result = average();
+// console.log(result(10));
+// console.log(result(15));
+
+
+
+
+
+// function Numbers(){
+//     let count = 0;
+//     return (num) => {
+//         return count += num;
+//     };
+// }
+// let addnums = Numbers();
+// console.log(addnums(3));
+// console.log(addnums(5));
+ 
+
+
+
+// function Binary(num){
+//     if(num === 0) return 0;
+//     return (num % 10) + 2 * Binary(Math.floor(num / 10));
+    
+// }
+// console.log(Binary(1101));
+// console.log(Binary(101));
+// console.log(Binary(1111));
+
+
+
+
+// function findmax(num1){
+//     return (num2) => {
+//      return num1 > num2 ? num1: num2;
+//     };
+// }
+// let sum = findmax(10);
+// console.log(sum(10));
+// console.log(sum(5));
+
+
+
+// function Plus(num){
+//     if(num <= 1) return 1;
+//     if(num % 2 != 0){
+//     return num + Plus(num - 1);
+// }
+//     else {
+//     return Plus(num - 1);
+//     }
+// }   
+// console.log(Plus(5));
+// console.log(Plus(8));
+// console.log(Plus(1));
+// ---------------------------------------------------------
+
+
+// function Suf(suffix){  // suffix = "ly"; иваз намешавад.
+//     return function(word){ // word = total, hopeless, even, sure; при каждой вызове измениться
+//         return word + suffix; // например word = total + suffix = ly === totally;
+//     };
+// }
+// const add = Suf('ly')
+// console.log(add('total'));
+// console.log(add('hopeless'));
+// console.log(add('even'));
+// console.log(add('sure'));
+
  
 
 
