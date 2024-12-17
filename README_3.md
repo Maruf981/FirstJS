@@ -134,144 +134,151 @@ console.log(text.lastIndexOf("мир")); // 8
 let text = "Привет, мир!";
 console.log(text.replace("мир", "друзья")); // "Привет, друзья!"
 ```
-Примечание:
+- Примечание:
 По умолчанию метод заменяет только первое вхождение подстроки. Для замены всех вхождений используйте replaceAll().
-10. replaceAll()
+
+### 10. replaceAll()
 Метод replaceAll() заменяет все вхождения подстроки на заданное значение.
 
 Пример:
-javascript
-Копировать код
+``` javascript
 let text = "Привет, мир! Привет!";
 console.log(text.replaceAll("Привет", "Здравствуй")); // "Здравствуй, мир! Здравствуй!"
-Примечание:
+```
+- Примечание:
 Этот метод заменяет все вхождения подстроки, а не только первое.
-11. substring()
+
+### 11. substring()
 Метод substring() извлекает подстроку между двумя индексами. Если второй индекс не передан, извлекается подстрока от первого индекса до конца строки.
 
 Пример:
-javascript
-Копировать код
+```javascript
 let text = "Привет, мир!";
 console.log(text.substring(0, 6)); // "Привет"
 console.log(text.substring(7)); // "мир!"
-Примечание:
+```
+- Примечание:
 Индексы могут быть больше или меньше друг друга — метод автоматически корректирует порядок.
-12. slice()
+
+### 12. slice()
 Метод slice() извлекает подстроку, начиная с указанного индекса до другого индекса. Может работать с отрицательными индексами.
 
 Пример:
-javascript
-Копировать код
+``` javascript
 let text = "Привет, мир!";
 console.log(text.slice(0, 6)); // "Привет"
 console.log(text.slice(-4));   // "мир!"
-Примечание:
+```
+- Примечание:
 В отличие от substring(), slice() поддерживает отрицательные индексы.
-13. split()
+
+### 13. split()
 Метод split() разделяет строку на массив подстрок, используя указанный разделитель.
 
 Пример:
-javascript
-Копировать код
+``` javascript
 let text = "Привет, мир!";
 console.log(text.split(", ")); // ["Привет", "мир!"]
-Примечание:
+```
+- Примечание:
 Если разделитель не найден, метод возвращает массив, содержащий исходную строку.
-14. toLowerCase()
+
+### 14. toLowerCase()
 Метод toLowerCase() преобразует все символы строки в нижний регистр.
 
 Пример:
-javascript
-Копировать код
+```javascript
 let text = "Привет";
 console.log(text.toLowerCase()); // "привет"
-Примечание:
+```
+- Примечание:
 Возвращает новую строку, не изменяя исходную.
-15. toUpperCase()
+
+### 15. toUpperCase()
 Метод toUpperCase() преобразует все символы строки в верхний регистр.
 
 Пример:
-javascript
-Копировать код
+```javascript
 let text = "Привет";
 console.log(text.toUpperCase()); // "ПРИВЕТ"
-Примечание:
+```
+- Примечание:
 Возвращает новую строку, не изменяя исходную.
-16. Math.floor()
+
+### 16. Math.floor()
 Метод Math.floor() округляет число в меньшую сторону до ближайшего целого.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.floor(3.9)); // 3
 console.log(Math.floor(-3.9)); // -4
-17. Math.ceil()
+```
+
+### 17. Math.ceil()
 Метод Math.ceil() округляет число в большую сторону до ближайшего целого.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.ceil(3.1)); // 4
 console.log(Math.ceil(-3.1)); // -3
-18. Math.round()
+```
+### 18. Math.round()
 Метод Math.round() округляет число до ближайшего целого.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.round(3.5)); // 4
 console.log(Math.round(3.4)); // 3
-19. Math.abs()
+```
+### 19. Math.abs()
 Метод Math.abs() возвращает абсолютное значение числа.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.abs(-5)); // 5
 console.log(Math.abs(5));  // 5
-20. Math.max()
+```
+### 20. Math.max()
 Метод Math.max() возвращает наибольшее из переданных чисел.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.max(1, 2, 3)); // 3
 console.log(Math.max(-1, -5, -3)); // -1
-21. Math.min()
+```
+### 21. Math.min()
 Метод Math.min() возвращает наименьшее из переданных чисел.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.min(1, 2, 3)); // 1
 console.log(Math.min(-1, -5, -3)); // -5
-22. Math.pow()
+```
+### 22. Math.pow()
 Метод Math.pow() возводит число в степень.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.pow(2, 3)); // 8
-23. Math.sqrt()
+```
+### 23. Math.sqrt()
 Метод Math.sqrt() возвращает квадратный корень числа.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.sqrt(16)); // 4
-24. Math.random()
+```
+### 24. Math.random()
 Метод Math.random() генерирует случайное число от 0 до 1.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(Math.random()); // случайное число, например 0.123456789
-25. isNaN()
+```
+### 25. isNaN()
 Метод isNaN() проверяет, является ли значение не числом.
 
 Пример:
-javascript
-Копировать код
+```javascript
 console.log(isNaN("Hello")); // true
 console.log(isNaN(123)); // false
