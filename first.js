@@ -1,3 +1,29 @@
+ 
+
+
+
+// function ismultiply(num1){
+
+//     return (num2) => {
+//     return Math.max(num1, num2) % Math.min(num1, num2) == 0;
+//     };
+// }
+// let checkmultiply = ismultiply(3)
+// console.log(checkmultiply(9))
+// console.log(checkmultiply(11))
+
+
+
+
+// function isArmstrong(num, originalNum = num, sum = 0){
+//     if(num == 0) return originalNum == sum;
+//     return isArmstrong(Math.floor(num / 10), originalNum, sum + Math.pow(num % 10, 3))
+// };
+//      console.log(isArmstrong(153));
+
+
+
+
 // function ismultiply(num1){
 //     return (num2) => {
 //         return num2 % num1 === 0;
@@ -10,27 +36,28 @@
 
 
 
-
 // function division(a, b) {
-//     return a % b === 0 ? true : false; division(a - b, b);
+//     if (a < b) return false;  
+//     if (a % b === 0) return true;  
+//     return division(a - b, b);  
 // }
 
 // console.log(division(10, 5)); 
-// console.log(division(15, 4));   
-// console.log(division(12, 3));  
+// console.log(division(15, 4));    
+// console.log(division(12, 3)); 
  
 
-
-
-//  function generator(num){
+// function generator(num) {
+//     let cnt = num;  
 //     return () => {
-//         console.log(num);
-//         num += 2; 
+//         console.log(cnt);  
+//         cnt += num;  
 //     };
-//  }
-//   let add = generator(2);
-//    add();
-//    add();
+// }
+
+// let add = generator(2);
+// add();  
+// add();  
   
  
 
@@ -55,7 +82,6 @@
 // let result = average();
 // console.log(result(10));
 // console.log(result(15));
-
 
 
 
