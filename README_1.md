@@ -197,8 +197,26 @@ console.log(anotherBlockVariable);
 ## Hoisting (Подъем переменных)
 
 **Hoisting** (подъем) — это механизм в JavaScript, при котором объявления переменных и функций "поднимаются" в верхнюю часть своей области видимости до выполнения кода. Это означает, что переменные и функции могут быть использованы до их явного объявления в коде.
+### Пример с var (переменные):
+```javascript
+console.log(a); // Вывод: undefined (переменная поднимается, но без значения)
 
+var a = 5; // Объявление переменной с var
+console.log(a); // Вывод: 5
+```
+### Пример с let и const (переменные):
+``` javascript
+console.log(b); // Ошибка! Cannot access 'b' before initialization
+let b = 10; // Объявление переменной с let
+```
+### Пример с функциями:
+``` javascript
+sayHello(); // Вывод: "Hello, world!"
 
+function sayHello() {
+    console.log("Hello, world!");
+}
+```
 ## Как работает Hoisting:
 
 1. **Переменные:**
