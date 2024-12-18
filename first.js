@@ -1,5 +1,4 @@
-const text = "Привет, мир!";
-console.log(text.substring(6,0)); // "мир!"
+ 
 
 
 
