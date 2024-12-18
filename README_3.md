@@ -11,7 +11,7 @@
 1. charAt()
 2. at()
 3. toString()
-4. concet()
+4. concat()
 5. trim()
 6. incledes()
 7. indexOf()
