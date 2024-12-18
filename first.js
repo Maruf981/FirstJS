@@ -1,5 +1,73 @@
- 
+const str = " \t Привет, мир! \n ";
+console.log(str); // "Привет, мир!"
 
+
+
+// function Reversestr(str){
+//     let result = str.split("").reverse().join("");
+//     return result.toUpperCase();
+// }
+// console.log(Reversestr("abc"));
+// console.log(Reversestr("hellothere"));
+
+
+
+// function isPlural(str){
+//     let check = str.at(-1);
+//     if(check === 's'){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// console.log(isPlural('change'));
+
+
+
+
+
+// function toint(num){
+//     let first = Number(num);
+//         return first;    
+// }
+// function tostr(str){
+//     let second = str.toString()
+//     return second;
+// }
+// console.log(toint("1234"));
+// console.log(tostr(1234));
+
+
+
+
+
+// function startend(str){
+//     let start = str.at(0);
+//     let end = str.at(-1);
+//     return start + end;
+// }
+// console.log(startend("ganesh"));
+// console.log(startend("dollar"));
+// console.log(startend("softclub"));
+
+
+
+
+
+//  function Lastelement(str,num){
+//     let last = str.at(-1);
+//     let count = "";
+//     for(let i = 1; i < num; i++){
+//         count += last; // в last сохранен 'o' при каждой итерации 'o' прибавляется к count;
+//     }
+//     return str + count; // str у нас hello, у count-а внутри два "o". Значит Hello + oo = Hellooo.
+//  }
+//  console.log(Lastelement("Hello", 3));
+//  console.log(Lastelement("Hey", 6));
+//  console.log(Lastelement("Excuse me what?", 5));
+ 
+//----------------------------------------------------------------
 
 
 // function ismultiply(num1){
