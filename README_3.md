@@ -186,6 +186,14 @@ console.log(text.lastIndexOf("мир")); // 8
 let text = "Привет, мир!";
 console.log(text.replace("мир", "друзья")); // "Привет, друзья!"
 ```
+- Замена символов в строке с использованием специальных символов
+```javascript
+const text = "abc def ghi";
+const newText = text.replace(/\s/g, "-");
+console.log(newText); // "abc-def-ghi"
+```
+В этом примере все пробелы заменяются на дефисы.
+
 - Примечание:
 По умолчанию метод заменяет только первое вхождение подстроки. Для замены всех вхождений используйте replaceAll().
 
@@ -208,6 +216,17 @@ console.log(text.replaceAll("Привет", "Здравствуй")); // "Здр
 let text = "Привет, мир!";
 console.log(text.substring(0, 6)); // "Привет"
 console.log(text.substring(7)); // "мир!"
+```
+```javascript
+const text = "Привет, мир!";
+console.log(text.substring(0, 6)); // "Привет" звлечение символов от индекса 0 до 6 вернёт "Привет"
+console.log(text.substring(8, 11)); // "мир" Извлечение символов от индекса 8 до 11 вернёт "мир"
+```
+Если startIndex больше, чем endIndex, JavaScript автоматически поменяет их местами:
+
+```javascript
+const text = "Привет, мир!";
+console.log(text.substring(11, 8)); // "мир". Будет start = 8; end = 11;
 ```
 - Примечание:
 Индексы могут быть больше или меньше друг друга — метод автоматически корректирует порядок.
