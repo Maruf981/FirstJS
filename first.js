@@ -1,7 +1,5 @@
 const text = "Привет, мир!";
-console.log(text.includes("мир", ));       // true
-console.log(text.includes("здравствуй")); // false
-console.log(text.includes("Привет", 0)); // false (поиск начинается с индекса 1)
+console.log(text.substring(6,0)); // "мир!"
 
 
 
