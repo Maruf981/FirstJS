@@ -1,5 +1,335 @@
- 
+// task 15
+//    function rev(str){
+//     let reverse = str.toString().split("").reverse().join("");
+//     return reverse.concat(str);
+//    }
+//    console.log(rev(123));
+//    console.log(rev(152));
+//    console.log(rev(123456789));
+   
 
+
+
+
+// task 14
+// function capital(str){
+//     let sum1 = "";
+//     let sum2 = "";
+//      for(let i = 0; i < str.length; i++){
+//     if(str[i] >= 'A' && str[i] <= 'Z'){
+//         sum1 += str[i];
+//     }
+//     if(str[i] >= 'a' && str[i] <= 'z'){
+//         sum2 += str[i];
+//     }
+// }
+// return sum1.concat(sum2);
+// }
+// console.log(capital("hApPy"));
+// console.log(capital("moveMENT"));
+// console.log(capital("shOrtCAKE"));
+
+
+
+
+// task 13
+// function foundchar(str1, str2){
+//     let count = 0;
+//     for(let i = 0; i < str2.length; i++){
+//         if(str1 === str2[i]){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(foundchar("a", "edabit"));
+// console.log(foundchar("c", "Chamber of secrets"));
+// console.log(foundchar("b", "big fat bubble"));
+
+
+
+
+// task 12
+// function polindrom(str){
+//     let res = str.split("").reverse().join("");
+//     if(res === str){
+//         return true;
+//     }
+//     else{
+//         return false
+//     }
+// }
+// console.log(polindrom("mom"));
+// console.log(polindrom("scary"));
+// console.log(polindrom("reviver"));
+
+
+
+
+// task 11
+// function joinDigit(n) {
+//     let result = '';
+//     for (let i = 1; i <= n; i++) {
+//         result += i.toString().split('').join('-');  
+//         if (i < n) result += '-'; 
+//     }
+//     return result;
+// }
+
+// console.log(joinDigit(4));   
+// console.log(joinDigit(11));  
+// console.log(joinDigit(15)); 
+
+
+
+
+// task 10
+// function vowel(str) {
+//     return str.replace(/([aeiouyAEIOUY])/g, '-$1-');
+// }
+
+// console.log(vowel('Edabit')); // "-E-d-a-b-i-t-"
+// console.log(vowel('Carpe Diem')); // "C-a-r-p-e- D-i-e-m"
+// console.log(vowel('Fight for your right to party!')); // "F-i-g-h-t f-o-r -y-o-u-r r-i-g-h-t t-o- p-a-r-t-y-!"
+
+
+// task 10
+// function vowel(str){
+//     let res = "";
+//     let vowels = 'aeiouyAEIOUY';
+//     for(let i = 0; i < str.length; i++){
+//         if(vowels.includes(str[i])){
+//             res += '-' + str[i] + '-';
+//         }
+//         else{
+//          res += str[i];
+//         }
+//     }
+//     return res;
+// }
+// console.log(vowel('Edabit'));
+// console.log(vowel('Carpe Diem'));
+// console.log(vowel('Fight for your right to party!'));
+
+
+
+
+// task 9
+// function reverseif5(str){
+//     let sum = str.split(" ");
+//     for(let i = 0; i < sum.length; i++){
+//         if(sum[i].length >= 5){
+//            sum[i] = sum[i].split("").reverse().join("");
+//         }
+//     }
+//     return sum.join(" ");
+// }
+// console.log(reverseif5('Reverse'));
+// console.log(reverseif5('This is a lacipyt sentence'));
+// console.log(reverseif5('The dog is big'));
+
+
+
+
+// task 8
+// function Nemo(str){
+//     let res = str.split(" ");
+//     let count = res.indexOf('Nemo') + 1;
+//     if(count === 0){
+//         return "Nemo not found"
+//     }    
+//     return `I found Nemo at ${count}`;
+// }
+// console.log(Nemo("I am finding Nemo !"));
+// console.log(Nemo("Nemo is me"));
+// console.log(Nemo("I am Nemo"));
+
+
+
+
+
+// task 7
+// function identical(str){
+//     let count = 0;
+//     for(let i = 0; i < str.length-1; i++){
+//         if(str[i] === str[i+1]){
+//             count++;
+//         }
+//     }
+//     return count >= 1;
+// }
+// console.log(identical("loop"));
+// console.log(identical("yummy”"));
+// console.log(identical("orange"));
+
+
+
+
+
+// task 6
+// function Middle(str){
+//     let judo = str.length;
+//     let res = Math.floor(judo / 2);
+//     if(judo % 2 === 0){
+//         return str[res - 1] + str[res]
+//     }
+//     else{
+//         return str[res];
+//     }
+// }
+// console.log(Middle('test'));
+// console.log(Middle('testing'));
+// console.log(Middle('A'));
+
+
+
+
+// task 5;
+// const greeting = (str) => {
+//     let result = "Hello";
+//     return result.concat(str);
+// } 
+// console.log(greeting(" Gerald"));
+// console.log(greeting(" Said"));
+// console.log(greeting(" Exem"));
+
+
+
+
+// task 4
+// function spaces(str){
+//     for(let i = 0; i < str.length; i++){
+//       if(str[i] === " "){
+//         return true;
+//     }
+//     }
+//         return false;
+// }
+// console.log(spaces("hello, word”"));
+
+
+
+
+//task 3
+// function changename(str1, str2){
+//     return str1.includes(str2);
+//  }
+// console.log(changename("abc", "bc"));
+
+
+
+
+//task 2
+// function countslog(str){
+//     let count = 0;
+//     let sum = str.split("-");
+//     count = sum.length;
+//     return count;
+// }
+// console.log(countslog('but-fet'));
+// console.log(countslog('beau-ti-ful'));
+// console.log(countslog('on-o-mat-o-poe-ai'));
+
+//task 2
+// function countslog(str){
+//     let count = 0;
+//     let sum = str.split("");
+//     for(let i = 0; i < sum.length; i++){
+//         if(sum[i] === '-'){
+//             count++;         
+//         }
+//     }
+//     return count + 1;
+// }
+// console.log(countslog('but-fet'));
+// console.log(countslog('beau-ti-ful'));
+// console.log(countslog('on-o-mat-o-poe-ai'));
+
+
+
+
+// task 1.
+// function changetonum(str){
+//     let numbers = str.split(",").join("");
+//     let sumofnum = Number(numbers);
+//     let sum = 1;
+//     for(let i = sumofnum; i > 0; i = Math.floor(i / 10)){
+//         sum *= i % 10;
+//     }
+//     return sum;
+// }
+// console.log(changetonum("2,3"));
+// console.log(changetonum('1,2,3,4'));
+// console.log(changetonum("54,75,453,0"));
+
+
+
+//___________________________________________________________
+
+
+// function capital(str){
+//     let count = "";
+//     let sum = "";
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] >= 'A' && str[i] <= 'Z'){
+//             count += str[i];
+//         }
+//         else if(str[i] >= 'a' && str[i] <= 'z'){
+//             sum += str[i];
+//         }
+//     }
+//     return count.concat(sum);
+// }
+// console.log(capital('hgTkjPJdf'));
+
+
+
+
+
+// function rev(num){
+//     let res = num.toString().split("").reverse().join("");
+//     return res.concat(num);  
+// }
+// console.log(rev(123));
+
+
+
+
+// function checkchar(str1, str2) {
+//     let count = 0;
+//     for (let char of str2) { 
+//         if (char === str1) { 
+//             count++; 
+//         }
+//     }
+//     return count; 
+// }
+// console.log(checkchar("a", "edabit")); 
+// console.log(checkchar("c","Chamber secrets")); 
+
+
+
+
+// function strpolindrom(str1){
+//     let reversed = str1.split("").reverse().join("");
+//     if (str1 === reversed){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// console.log(strpolindrom("moh"));
+
+
+
+
+//  function checktwolast(str1, str2){
+// return str1.includes(str2)
+//  }
+//  console.log(checktwolast("sine","nine"));
+ 
+//-------------------------------------------------
 
 
 // function Reversestr(str){
@@ -66,7 +396,7 @@
 //  console.log(Lastelement("Hey", 6));
 //  console.log(Lastelement("Excuse me what?", 5));
  
-//----------------------------------------------------------------
+//----------------------------------------------------------------String
 
 
 // function ismultiply(num1){
@@ -205,7 +535,7 @@
 
 
 // function Suf(suffix){  // suffix = "ly"; иваз намешавад.
-//     return function(word){ // word = total, hopeless, even, sure; при каждой вызове измениться
+//     return function(word){ // word = total, hopeless, even, sure; при каждом вызове измениться
 //         return word + suffix; // например word = total + suffix = ly === totally;
 //     };
 // }
@@ -300,14 +630,12 @@
 // console.log(multiply(222));
 // console.log(multiply(333));
 
-//----------------------------------------------------
+//---------------------------------------------------- 
 
 // function isPalindrome(num, reversed = 0, original = num) {
 //     if (num === 0) return original === reversed;  
 //     return isPalindrome(Math.floor(num / 10), reversed * 10 + (num % 10), original);  
 // }
-
- 
 // console.log(isPalindrome(12321));  
 // console.log(isPalindrome(12345));  
 
@@ -318,15 +646,14 @@
 //     console.log(`${num} * ${i} = ${num * i}`);  
 //     return MultTable(num, i + 1);  
 // }
- 
 // MultTable(5);
 
 
 
- // function fibonacci(n) {
+// function fibonacci(n) {
 //     if (n === 0) return 0;  
 //     if (n === 1) return 1;  
- //     if (n === 3) return 1;  
+//     if (n === 3) return 1;  
 //     return fibonacci(n - 1) + fibonacci(n - 2);  
 //  }
 //  console.log(fibonacci(3));
@@ -338,6 +665,7 @@
 //     return num % 10 + Rev(Math.floor(num / 10));
 // }
 // console.log(Rev(12345));
+
 
 
 // function Closurplus(num){
@@ -391,7 +719,7 @@
 // console.log(factorialr(5));
 
 
-//---------------------------------------------------------------------------
+//--------------------------------------------------------------------------- Recurcion && Closure
 
 // const sum = (a,b,c) => (a * b) + 5;
 // console.log(sum(5,5,2));

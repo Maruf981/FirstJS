@@ -1,9 +1,13 @@
-function factorial(num){
-    let sum = 1;
-    for(let i = 1; i <= num; i++){
-        sum *= i;
-    }
-    let itog = sum.toString().split("").join("");
-    return parseInt(itog);
+function Reverse(str) {
+    let reversed = str.split("").reverse().map(char => {
+        if (char === char.toUpperCase()) {
+            return char.toLowerCase();
+        } 
+        else 
+        {
+            return char.toUpperCase();
+        }
+    });
+    return reversed.join("");
 }
-console.log(factorial(4));
+console.log(Reverse("hello World"));
