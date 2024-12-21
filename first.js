@@ -1,3 +1,203 @@
+
+
+
+
+// function returntwoarg(arr1, arr2){
+//     return [arr1, arr2];
+// }
+// console.log(returntwoarg(1,2));
+
+
+
+
+
+// function firstindex(arr){
+//  return arr [0];
+// }
+// console.log(firstindex([80, 5, 100]));
+// console.log(firstindex([500, 6, 220]));
+
+
+
+
+
+// function splitevenodd(arr){
+//     let result = {even: [], odd: []};
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0){
+//             result.even.push(arr[i]);
+//         }
+//         else{
+//             result.odd.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+// console.log(splitevenodd([1, 2, 3, 4, 5, 6]));
+
+
+
+
+
+// function twomax(arr){
+//     let max1 = -Infinity, max2 = -Infinity;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max1) {
+//             max2 = max1;
+//             max1 = arr[i];
+            
+//            }
+//            else if(arr[i] > max2 && arr[i] < max1) max2 = arr[i];
+//     }
+//     return  max1 + ", " + max2;
+// }
+// console.log(twomax([3, 1, 4, 1, 5, 9, 2]));
+
+
+
+
+// function Object(arr){
+//     let count = {};
+//     for(let i = 0; i < arr.length; i++){
+//         if(count[arr[i]]){
+//             count[arr[i]]++;
+//         }
+//         else{
+//             count[arr[i]] = 1;
+//         }
+//     }
+//     return count;
+// }
+// console.log(Object(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']));
+
+
+
+
+// function polindrom(arr){
+//     const rev = arr.toReversed();
+//     return rev.join("") === arr.join("");
+    
+// }
+// console.log(polindrom([1,2,3,4]));
+// console.log(polindrom([1,2,2,1]));
+
+
+
+
+
+// function sumevenindex(arr){
+//     let count = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(i % 2 === 0){
+//             count += arr[i];        
+//         }
+//     } 
+//     return count;
+// }
+// console.log(sumevenindex([10, 20, 30, 40, 50]));
+
+
+
+//  function array(arr, arr1){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] !== arr1){
+//             res.push(arr[i]);
+//         }
+//     }
+//     return res;
+//  }
+//  console.log(array([3, 5, 7, 3, 2, 3], 3).join(" "));
+ 
+
+
+// function findmin(arr){ // JS
+//     let min = Infinity;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] < min) min = arr[i];
+//     }
+//     return min;
+// }
+// console.log(findmin([5, 2, 9, 1, 7]));
+
+
+
+//  function average(array){
+//     let count = 0;
+//     let sum = 0;
+//     for(let i = 0; i < array.length; i++){
+//         sum += array[i];
+//         count++;
+//     }
+//     return Math.floor(sum / count);
+//  }
+//  console.log(average([2, 4, 6, 8]));
+//  console.log(average([1, 4, 6, 9, 10]));
+//  console.log(average([2, 4]));
+ 
+
+
+// function array(arr1, arr2){
+//     for(let i = 0; i < arr1.length; i++){
+//         if(arr1[i] === arr2){
+//             return true;
+//         }             
+//     }
+//     return false;
+// }
+// console.log(array([10, 20, 30, 40, 50], 30));
+// console.log(array([1, 2, 3, 4, 5], 7));
+// console.log(array([ 123,222,321], 321));
+
+
+
+// function addeven(arr){
+//     let count = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(addeven([1, 2, 3, 4, 5, 6]));
+// console.log(addeven([2, 4, 6, 8]));
+// console.log(addeven([1, 3, 5, 7, 9]));
+
+
+
+
+// function array(arr){
+//     let max = -99999;
+//     for(let i = 0; i < arr.length; i++){
+//       if(arr[i] > max) max = arr[i]; 
+//     }
+//     return max;
+// }
+ 
+//  console.log(array([3, 8, 1, 6, 2]));
+//  console.log(array([1, 2, 5, 7, 9]));
+//  console.log(array([1, 2, 3, 4, 5]));
+ 
+  
+
+
+// function Array(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(Array([2,4,6, 8]));
+// console.log(Array([1,2,3,4,5]));
+// console.log(Array([]));
+
+ 
+
+
+//_________________________________________________________________Array
+
 // task 15
 //    function rev(str){
 //     let reverse = str.toString().split("").reverse().join("");
