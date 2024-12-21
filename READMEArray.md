@@ -826,3 +826,91 @@ function sum(x, y, z) {
 const numbers = [1, 2, 3];
 console.log(sum(...numbers)); // 6
 ```
+# Rest Parameters
+
+**Rest Parameters** позволяют функции принимать неограниченное количество аргументов в виде массива. Это упрощает работу с неопределённым количеством входных данных.
+
+## Синтаксис
+
+Rest Parameters обозначаются оператором `...`, который используется в определении функции перед именем параметра.
+
+```javascript
+function exampleFunction(...args) {
+  console.log(args);
+}
+```
+Примеры
+1. Работа с любым количеством аргументов
+```javascript
+function sumAll(...numbers) {
+  return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+console.log(sumAll(1, 2, 3, 4)); // 10
+console.log(sumAll(10, 20));     // 30
+```
+2. Использование вместе с обычными параметрами
+Rest Parameters могут сочетаться с обычными параметрами.
+
+```javascript
+function greet(firstName, ...messages) {
+  console.log(`Hello, ${firstName}!`);
+  console.log("Messages:", messages);
+}
+
+greet("Alice", "Welcome", "How are you?", "Good to see you!");
+// Hello, Alice!
+// Messages: [ 'Welcome', 'How are you?', 'Good to see you!' ]
+```
+3. Передача произвольных аргументов в функцию
+Rest Parameters удобно использовать для функций, которым нужно обработать список значений.
+
+```javascript
+function logAll(...values) {
+  values.forEach(value => console.log(value));
+}
+
+logAll(1, "Hello", true, { key: "value" });
+// 1
+// Hello
+// true
+// { key: "value" }
+```
+4. Rest Parameters — массив, а не объект arguments
+Rest Parameters создают настоящий массив, что делает их более удобными, чем объект arguments.
+
+```javascript
+function withArguments() {
+  console.log(arguments); // [Arguments] { '0': 1, '1': 2, '2': 3 }
+}
+
+function withRest(...args) {
+  console.log(args); // [1, 2, 3]
+}
+
+withArguments(1, 2, 3);
+withRest(1, 2, 3);
+```
+5. Пример с деструктуризацией
+Rest Parameters могут быть использованы с деструктуризацией.
+
+```javascript
+function splitNames(firstName, ...otherNames) {
+  console.log(`First name: ${firstName}`);
+  console.log(`Other names: ${otherNames}`);
+}
+
+splitNames("John", "Paul", "George", "Ringo");
+// First name: John
+// Other names: [ 'Paul', 'George', 'Ringo' ]
+```
+- Примечания
+- Rest Parameters должны быть последними в списке параметров.
+
+```javascript
+function invalidFunction(...rest, anotherParam) {
+  // SyntaxError: Rest parameter must be last formal parameter
+}
+```
+Rest Parameters заменяют устаревший объект arguments и предоставляют более удобный способ работы с параметрами функции.
+
