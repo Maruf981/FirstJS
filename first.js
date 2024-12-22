@@ -1,3 +1,183 @@
+// function array (...array){
+    
+//     return [].concat(...array)
+// }
+// console.log(array([15, 4], [2, 3],[5,7]));
+
+ //------------------------------------------------------------Hometask array
+
+// function cubesqrt(arr){
+//     return Math.sqrt(arr[0]) === Math.cbrt(arr[1]);
+// }
+
+// console.log(cubesqrt([4, 8]));
+// console.log(cubesqrt([4, 7]));
+
+
+
+
+// function type(arr){
+//     return arr.map(item => typeof item);
+// }
+// console.log(type(["214", true, false, 2, 2.15, [], null]));
+
+
+
+// function tostring(arr){
+//     return arr.map(item => `"${item}"`).join(", ");
+// }
+// console.log(tostring(["abc", 123, "def", 456]));
+
+
+
+
+// function hassomebread(arr1, arr2){
+//     if(arr1[0] === arr2[0] && arr1[2] === arr2[2]){
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(hassomebread(["white bread", "lettuce", "white bread"],
+//     ["white bread", "tomato", "white bread"]));
+//     console.log(hassomebread(["brown bread", "chicken", "brown bread"],
+//         ["white bread", "chicken", "white bread"]));
+    
+
+
+
+
+//  function Countmoney(arr){
+//     return { // Создание объекта
+//         Needs: arr * 0.5,
+//         Wants: arr * 0.3,
+//         Saving: arr * 0.2
+//     }
+//  }
+//  console.log(Countmoney(10000));
+ 
+
+
+
+// function findnums(num1, num2, arr){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > num1 && arr[i] < num2){
+//             res.push(arr[i]);
+//         }
+//     }
+//     return res;
+// }
+// console.log(findnums(3, 8, [1, 5, 95, 0, 4, 7])); // [5, 4, 7]
+
+
+
+
+
+// function ifequal(arr, num){
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === num){
+//             return true;
+//         }     
+//     }
+//     return false; 
+// }
+// console.log(ifequal([1, 2, 3, 4, 5], 3));
+// console.log(ifequal([1, 1, 2, 1, 1], 3));
+
+
+
+
+
+// function findindex(arr, str){
+//     return arr.indexOf(str);
+// }
+// console.log(findindex(["hi", "edabit", "fgh", "abc"], "fgh"));
+// console.log(findindex(["Red", "blue", "Blue", "Green"], "blue"));
+
+
+
+
+
+// function concattwoarr(arr1, arr2){
+//     return arr1.concat(arr2);
+// }
+// console.log(concattwoarr([1, 2, 3, 4,], [4, 5, 6]));
+
+
+
+
+// function arrtostring(arr){
+//     return arr.map(String).join("");
+      
+// }
+// console.log(arrtostring([1, 2, 3, 4, 5, 6]));
+// console.log(arrtostring(["a", "b", "c", "d", "e", "f"]));
+// console.log(arrtostring([1, 2, 3, 4, 5, 6]));
+
+
+
+
+// function getlastitem(arr){
+//     let last = arr.pop();
+//     return last;
+// }
+// console.log(getlastitem([1, 2, 3]));
+// console.log(getlastitem(["cat", "dog", "duck"]));
+// console.log(getlastitem([true, false, true]));
+
+
+
+
+
+// const arr = [1, 2, 3, 4, 5, 6]
+// let a = [0]
+// let b = [1]
+// console.log(a);
+// console.log(b);
+
+
+
+
+// function destruc(arr){
+//     let a = arr[0];
+//     let b = arr[1];
+//     let c = arr[5];
+//     let d = arr[6];
+//     return [a, b, c, d];
+// }
+// console.log(destruc([1, 2, 3, 4, 5, 6]));
+
+
+
+
+//  function increment(array){
+//     let count = 0;
+//     for(let i = 0; i < array.length; i++){
+//        array[i] += 1; 
+//     }
+//     return array;
+//  }
+//  console.log(increment([0, 1, 2, 3]));
+ 
+
+
+
+
+// function Votes(num){
+//     return num.upvotes - num.downvotes; 
+// }
+// console.log(Votes({ upvotes: 13, downvotes: 0 }));
+
+
+
+// function srez(arr1, arr2){
+//    let sum = arr1.slice(arr2);
+//    return sum;
+// }
+// console.log(srez([1, 2, 3], 1));
+// console.log(srez([6, 10, 3, 22, 12], 5));
+// console.log(srez([1, 8, 3, 4, true, "apple"], 4));
+// console.log(srez([1, 2, 3], 2));
 
 
 
