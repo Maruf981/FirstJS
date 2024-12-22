@@ -1,8 +1,279 @@
+const array = [10, 20, 30, 40, 50];
+
+let [first, third, ...rest] = array;
+console.log(first, third);
+console.log(rest);
+
+
+
+
+// task 10
+// function lengthstr(arr){
+//     let count = [];
+//     for(let i = 0; i < arr.length; i++){
+//         count.push(arr[i].length);
+//     }
+//     return count;
+// }
+// console.log(lengthstr(["Halloween", "Thanksgiving", "Christmas"]));
+// console.log(lengthstr((["She", "sells", "seashells", "down", "by", "the"])));
+
+
+
+
+
+//task 9
+// function typeCheck(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         return arr.map(item => typeof item)
+//     }
+// }
+// console.log(typeCheck([21.1, "float", "array", ["I’m array"], true, 214]));
+
+
+
+
+// task 8
+// function sumarray(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(sumarray([1, 2, 3, 4, 5]));
+// console.log(sumarray([-1, 0, 1]));
+
+
+
+
+
+// // task 7
+// function betweennum1num2(num1, num2, arr){
+//     let newarr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > num1 && arr[i] < num2){
+//             newarr.push(arr[i]);
+//         }
+//     }
+//     return newarr;
+// }
+// console.log(betweennum1num2(3, 8, [1, 5, 95, 0, 4, 7]));
+
+
+
+
+
+// task 6
+// function polindrome(arr){
+//     return arr.slice().reverse().join("") === arr.join("");
+// }
+// console.log(polindrome([1, 2, 3, 2, 1]));
+// console.log(polindrome([2, 1, 4, 7, 1]));
+
+
+
+
+
+
+// // task 5
+// function averagenums(arr){
+//     let count = 0, sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//         count++;
+//     }
+//     return Math.floor(sum / count);
+// }
+// console.log(averagenums([2, 4, 6, 8, 10]));
+// console.log(averagenums([2, 4, 6, 8, 20, 9]));
+
+
+
+
+
+// // task 4
+// function Negativenum(arr){
+//     let newarr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > 0){
+//             newarr.push(arr[i]);
+//         }
+// }
+// return newarr;
+// }
+// console.log(Negativenum([-1, 2, -3, 4, -5]));
+// console.log(Negativenum([-12,-32,-4,-7]));
+
+
+
+
+
+
+
+// // task 3
+// function notduplicate(arr){
+//     let newarr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(newarr.indexOf(arr[i]) === -1){
+//             newarr.push(arr[i]);
+//         }
+//     }
+//     return newarr;
+// }
+// console.log(notduplicate([1, 2, 2, 3, 4, 4]));
+
+
+
+
+
+
+// task 2
+// function indexelement(arr, element){
+//     return arr.indexOf(element);
+// }
+// console.log(indexelement([3,4,5,3,1,5,5,5,7,6], 5)
+// );
+
+
+
+
+
+
+
+// task 1
+
 // function array (...array){
-    
 //     return [].concat(...array)
 // }
 // console.log(array([15, 4], [2, 3],[5,7]));
+
+
+//______________________________________________________________
+
+// // task 10
+// function tonumbers(arr){
+//       return `[${arr.join(", ")}]`;  
+// }
+// console.log(tonumbers(["9.4", "4.2"]));
+
+
+
+
+// task 9
+// function jointwoarr(arr1, arr2) {
+//     return [...arr1, ...arr2];
+// }
+// console.log(jointwoarr([7, 8], [10, 9, 1, 1, 2]));
+
+
+
+
+
+// // task 8
+// function findindex(arr, ind){
+//     return arr.indexOf(ind);
+// }
+// console.log(findindex(["hi", "edabit", "fgh", "abc"], "fgh"));
+// console.log(findindex(["Red", "blue", "Blue", "Green"], "blue"));
+
+
+
+
+
+
+// task 7
+// function particular(arr, num){
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === num){
+//             return true;
+//         } 
+//     }
+//     return false;
+// }
+// console.log(particular([1, 2, 3, 4, 5], 3));
+// console.log(particular([1, 1, 2, 1, 1], 3));
+
+
+
+
+
+
+// //task 6
+// function tostring(arr){
+//     return `"${arr.map(String).join("")}"`;
+// }
+// console.log(tostring(["a","b","c","d","e","f"]));
+// console.log(tostring([1, 2, 3, "a", "s", "dAAAA"]));
+
+
+
+
+
+// task 5
+// function Dellast(arr){
+//     return arr.pop();
+// }
+// console.log(Dellast(["cat", "dog", "duck"]));
+// console.log(Dellast([true, false, true]));
+
+
+
+
+// tast 4
+// function Addnum(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         debugger;
+//         arr[i] += 1;
+//     }
+//     return arr;
+
+// }
+// console.log(Addnum([0, 1, 2, 3]));
+
+
+// function Addnum(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log(`Before ${arr[i]} = ${arr[i]}`);
+        
+//         arr[i] += 1;
+//         console.log(`After: arr[${i}] = ${arr[i]}`);  // Вывод после изменения
+//     }
+//     return arr;
+// }
+// console.log(Addnum([0, 1, 2, 3]));
+
+
+
+// task 3
+// function Reverse(arr){
+//     return arr.toReversed();
+// }
+// console.log(Reverse([1,2,3,4]));
+// console.log(Reverse([9, 9, 2, 3, 4]));
+
+
+
+// task2
+// function returnarray(...arr){
+//     return arr;
+// }
+// console.log(returnarray(1,2,3));
+// console.log(returnarray(51, 21));
+// console.log(returnarray(512124, 215));
+
+
+
+// task 1
+// function arrfirstnum(arr){
+    
+//     return arr[0];
+// }
+// console.log(arrfirstnum([1,2,3]));
+// console.log(arrfirstnum([80, 5, 100]));
+// console.log(arrfirstnum([-500, 0 ,50]));
+
+
 
  //------------------------------------------------------------Hometask array
 
