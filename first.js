@@ -2,8 +2,6 @@
  
 
 
-
-
 // task 15
 // function integersonly(arr){
 //     let res = [];
@@ -181,8 +179,6 @@
 
 
 
-
-
 // // task 3
 // function notduplicate(arr){
 //     let newarr = [];
@@ -198,16 +194,12 @@
 
 
 
-
-
 // task 2
 // function indexelement(arr, element){
 //     return arr.indexOf(element);
 // }
 // console.log(indexelement([3,4,5,3,1,5,5,5,7,6], 5)
 // );
-
-
 
 
 
@@ -223,9 +215,10 @@
 
 //______________________________________________________________
 
-// // task 10
+// task 10
 // function tonumbers(arr){
-//       return `[${arr.join(", ")}]`;  
+//     //   return `[${arr.join(", ")}]`;  
+//     return arr.map(str => + str)
 // }
 // console.log(tonumbers(["9.4", "4.2"]));
 

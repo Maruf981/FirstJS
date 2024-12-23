@@ -1,5 +1,7 @@
  
-
+function callbacks(array, callback){
+        console.log()
+}
 
 
 // function findword(str) {
