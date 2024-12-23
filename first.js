@@ -1,8 +1,80 @@
-const array = [10, 20, 30, 40, 50];
 
-let [first, third, ...rest] = array;
-console.log(first, third);
-console.log(rest);
+ 
+
+
+
+
+// task 15
+// function integersonly(arr){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(Number.isInteger(arr[i])){
+//             res.push(arr[i]);
+//         }
+//     }
+//     return res;
+// }
+// console.log(integersonly([1, 2, 3, "a", "b", 4]));
+// console.log(integersonly(["A", 0, "Edabit", 1729, "Python", "1729"]));
+
+
+
+
+
+// task 14
+// function elementgreaterthan5(arr){
+//     let result = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > 5){
+//             result += arr[i];
+//         }
+//     }
+//     return result;
+// }
+// console.log(elementgreaterthan5([1, 5, 20, 30, 4, 9, 18]));
+// console.log(elementgreaterthan5([10, 12, 28, 47, 55, 100]));
+
+
+
+
+
+
+// task 13
+// function multiplaybytwo(arr){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         res.push(arr[i] * 2);
+//     }
+//     return res;
+// }
+// console.log(multiplaybytwo([2, 5, 3]));
+
+
+
+
+// task 12
+// function invertedarr(arr){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         res.push(-arr[i]);
+//     }
+//     return res;
+// }
+// console.log(invertedarr([1, 2, 3, 4, 5]));
+// console.log(invertedarr([1, -2, 3, -4, 5]));
+// console.log(invertedarr([]));
+
+
+
+
+//task 11
+// function squirecube(arr){
+//     return Math.sqrt(arr[0]) === Math.cbrt(arr[1]);
+// }
+// console.log(squirecube([4, 8]));
+// console.log(squirecube([16, 48]));
+// console.log(squirecube([9, 27]));
+
 
 
 
@@ -400,9 +472,9 @@ console.log(rest);
 
 
 
-// const arr = [1, 2, 3, 4, 5, 6]
-// let a = [0]
-// let b = [1]
+//  const arr = [1, 2, 3, 4, 5, 6]
+// let a = arr[0]
+// let b = arr[1]
 // console.log(a);
 // console.log(b);
 
