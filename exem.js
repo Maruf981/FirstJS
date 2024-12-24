@@ -1,4 +1,116 @@
-// task 15
+// task 10
+// function differencebetweenmaxmin(arr){
+//     let max = Math.max(...arr);
+//     let min = Math.min(...arr);
+//     return max - min;
+// }
+// console.log(differencebetweenmaxmin([100, 200, 300, 400, 500]));
+
+
+
+
+
+// task 9
+// function squareofevennums(arr){
+//     return arr.reduce((acc, nums) => {
+//         if(nums % 2 === 0){
+//             return acc + nums ** 2;
+//         }
+//         return acc; 
+//     },0); 
+// }
+// console.log(squareofevennums([11, 12, 13, 14, 15]));
+
+
+
+
+
+
+// task 8
+// function toreversedarr(arr){
+//     return arr.toReversed();
+// }
+// console.log(toreversedarr([11, 12, 13, 14, 15]));
+
+
+
+
+// task 7
+// function indexofmaxnum(arr){
+//     return arr.indexOf(Math.max(...arr));
+// }
+// console.log(indexofmaxnum([1, 5, 3, 5, 2]));
+
+
+
+
+// task 6
+// function onlynegativenums(arr){
+//  return arr.filter((nums) => nums < 0);
+// }
+// console.log(onlynegativenums([100, -200, 300, -400, 500]));
+
+
+
+
+// task 5
+// function averageofallelem(arr) {
+//     let sum = arr.reduce((acc, val) => acc + val, 0);{
+//         return sum / arr.length;
+//     };
+// } 
+// console.log(averageofallelem([11, 12, 13, 14, 15]));
+
+
+
+// task 4
+// function shorteststring(arr){
+//     let short = "99999999999";
+//     arr.forEach((str) => {
+//         if(str.length < short.length){
+//             short = str;
+//         }
+//     });
+//     return short;
+// }
+// console.log(shorteststring(["apple", "banana", "cherry"]));
+
+
+ 
+
+
+
+// task 3
+// function minelementarr(arr){
+//     return Math.min(...arr);
+// }
+// console.log(minelementarr([1, 2, 3, 4, 5]));
+// console.log(minelementarr([4, 2, 6, 4, 5]));
+
+
+
+
+// task 2
+// function sortedarr(arr){
+//     return arr.toSorted((a, b) => b - a);
+// }
+// console.log(sortedarr([1, 3, 2]));
+
+
+
+
+
+// //task 1;
+// function eachelementsquared(arr){
+//     return arr.map((num) => num * num);
+// }
+// console.log(eachelementsquared([1, 2, 3]));
+
+
+//______________________________________________________________________________
+
+
+// // task 15
 // function alphabetindex(str){
 //       return str.toLowerCase().split("").map((char) => { // replace(/[^a-z]/g, '')
 //         if(char >= 'a' && char <= 'z'){
