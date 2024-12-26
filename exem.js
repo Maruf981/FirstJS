@@ -1,3 +1,118 @@
+// // task 10
+// function toUpCase(obj){
+
+//     let newobj = {};
+//     Object.keys(obj).forEach((keys) => {
+//         newobj[keys.toUpperCase()] = obj[keys];
+//     });
+//     return newobj;
+// }
+// console.log(toUpCase({a: 1, b: 2}));
+// console.log(toUpCase({name: "Alice", age: 25}));
+
+
+// task 9
+// function delatetheproperty(obj, propName){
+//     delete obj[propName];
+//     return obj;
+// }
+// console.log(delatetheproperty({a: 1, b: 2, c: 3},"b"));
+// console.log(delatetheproperty({name: "Alice", age: 25},"age"))
+
+
+
+// // task 8
+// function objectkeysorder(obj){
+//     let forkeys = Object.keys(obj).sort();
+//     let newobj = {};
+//     forkeys.forEach((keys) => {
+//         newobj[keys] = obj[keys];
+//     });
+//     return newobj;
+// }
+// console.log(objectkeysorder({b: 2, a: 1, c: 3}));
+// console.log(objectkeysorder({name: "Charlie", age: 30, job: "Engineer"}));
+
+
+
+
+// task 7
+// function getproperty(obj, propName) {
+//     return obj[propName];
+// }
+ 
+// console.log(getproperty({name: "John", age: 30}, "name"));
+// console.log(getproperty({name: "Bob", age: 30},"age"));
+
+
+
+// // task 6
+// function countproperties({name, age, city}){
+//     return Object.keys({name, age, city}).length;
+// }
+// console.log(countproperties({name: "John", age: 30, city: "New York"}));
+
+
+
+
+// task 5
+// function summarizeBook({title, author, ratings}){
+//     const average = ratings.reduce((acc, rating) => acc + rating, 0) / ratings.length;
+//     return `${title} by ${author} has an average rating of ${average}`; 
+// }
+// console.log(summarizeBook({ title: "The Great Gatsby", author: "F. Scott Fitzgerald", ratings: [5, 4, 5, 3, 4] }));
+
+
+
+
+// task 4
+// function Ageman({ firstName, lastName, birthYear }){
+//     let currentyear = new Date().getFullYear();
+//     return `${currentyear - birthYear}`;
+// }
+    
+
+// console.log(Ageman({ firstName: "John", lastName: "Doe", birthYear: 2000 }));
+// console.log(Ageman({ firstName: "Alice", lastName: "Smith", birthYear: 1990 }));
+
+    
+
+
+// task 3
+// function totalPrice(allprice){
+//     return allprice.reduce((acc, products) => acc + products.price, 0);}
+//     const allprice = [
+//         {name: "Book", price: 10},
+//         {name: "Pen", price: 2},
+//         {name: "Notebook", price: 5}
+//     ];
+
+// console.log(totalPrice([{ name: "Shoes", price: 50 }, { name: "Shirt", price: 20 }, { name: "Hat", price: 15 }]));
+// console.log(totalPrice([{name: "Bag", price: 30 },{ name: "Belt", price: 10 }, { name: "Jacket", price: 100 }]));
+
+
+
+// task 2
+// function upvotedownvote ({upvotes, downvotes}){
+//     let up = `${upvotes}`;
+//     let down =  `${downvotes}`;
+//     return up - down;
+// }
+// console.log(upvotedownvote({upvotes: 13, downvotes: 0}));
+// console.log(upvotedownvote({ upvotes: 2, downvotes: 33 }));
+
+
+
+
+// function personData({ name, age, location }) {
+//     return `${name} is ${age} years old and he lives in ${location}`;
+// }
+
+// console.log(personData({ name: "John", age: 30, location: "New York" }));
+    
+
+//___________________________________________________________Object
+
 // task 10
 // function differencebetweenmaxmin(arr){
 //     let max = Math.max(...arr);
