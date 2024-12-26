@@ -240,23 +240,22 @@ console.log(Object.values(user)); // ["Alice", 25]
 Метод Object.values() — это простой способ получить значения объекта для анализа или обработки. Он удобен для итерации по значениям или выполнения вычислений.
 
 
-Метод Object.entries() в JavaScript
+# Метод Object.entries()
 Метод Object.entries() возвращает массив, содержащий пары ключ-значение для всех собственных свойств объекта. Каждая пара представлена в виде массива: первый элемент — это ключ, а второй — значение.
 
-Синтаксис
-javascript
-Копировать код
+
+```javascript
 Object.entries(obj);
 obj — объект, из которого нужно получить пары ключ-значение.
 Возвращаемое значение
 Возвращает массив массивов, где каждый внутренний массив состоит из двух элементов:
+```
 
 Первый элемент — ключ (строка).
 Второй элемент — значение, соответствующее этому ключу.
 Примеры
 1. Получение пар ключ-значение
-javascript
-Копировать код
+```javascript
 const user = {
   name: "Alice",
   age: 25,
@@ -266,14 +265,14 @@ const user = {
 const entries = Object.entries(user);
 console.log(entries);
 // [["name", "Alice"], ["age", 25], ["isAdmin", false]]
+```
 2. Работа с пустым объектом
-javascript
-Копировать код
+```javascript
 const emptyObj = {};
 console.log(Object.entries(emptyObj)); // []
+```
 3. Перебор пар ключ-значение
-javascript
-Копировать код
+```javascript
 const car = {
   brand: "Toyota",
   model: "Camry",
@@ -287,25 +286,25 @@ Object.entries(car).forEach(([key, value]) => {
 // brand: Toyota
 // model: Camry
 // year: 2020
-Особенности
+```
+#### Особенности
 Только собственные свойства: Object.entries() возвращает пары ключ-значение только для свойств, принадлежащих самому объекту. Унаследованные свойства не учитываются.
 
-javascript
-Копировать код
+```javascript
 const obj = Object.create({ inheritedKey: 42 });
 obj.ownKey = "value";
 
 console.log(Object.entries(obj)); // [["ownKey", "value"]]
+```
 Порядок пар: Пары возвращаются в порядке добавления свойств в объект.
 
-javascript
-Копировать код
+```javascript
 const obj = { 2: "b", 1: "a", name: "test" };
 console.log(Object.entries(obj)); // [["1", "a"], ["2", "b"], ["name", "test"]]
+```
 Использование
 1. Преобразование объекта в массив
-javascript
-Копировать код
+```javascript
 const user = {
   name: "Alice",
   age: 25
@@ -313,16 +312,16 @@ const user = {
 
 const entries = Object.entries(user);
 console.log(entries); // [["name", "Alice"], ["age", 25]]
+```
 2. Обратное преобразование (массив в объект)
-javascript
-Копировать код
+```javascript
 const entries = [["name", "Alice"], ["age", 25]];
 const obj = Object.fromEntries(entries);
 
 console.log(obj); // { name: "Alice", age: 25 }
+```
 3. Фильтрация ключей и значений
-javascript
-Копировать код
+```javascript
 const scores = {
   Alice: 50,
   Bob: 70,
@@ -335,12 +334,12 @@ const filtered = Object.entries(scores)
   .map(([key]) => key);
 
 console.log(filtered); // ["Alice", "Bob"]
-Сравнение с другими методами
+```
+- Сравнение с другими методами
 Object.keys(obj) — возвращает массив ключей.
 Object.values(obj) — возвращает массив значений.
 Object.entries(obj) — возвращает массив пар ключ-значение.
-javascript
-Копировать код
+```javascript
 const user = {
   name: "Alice",
   age: 25
@@ -349,5 +348,310 @@ const user = {
 console.log(Object.keys(user));    // ["name", "age"]
 console.log(Object.values(user));  // ["Alice", 25]
 console.log(Object.entries(user)); // [["name", "Alice"], ["age", 25]]
-Итог
+```
+#### Итог
 Метод Object.entries() удобен для работы с парами ключ-значение объекта, особенно при преобразовании объектов, их переборе или фильтрации данных.
+
+# Деструктуризация объектов в JavaScript
+Деструктуризация объектов позволяет извлекать свойства объекта и присваивать их переменным с помощью удобного синтаксиса.
+
+Примеры
+1. Базовая деструктуризация
+```javascript
+const user = { name: "Alice", age: 25, isAdmin: true };
+
+const { name, age } = user;
+
+console.log(name); // "Alice"
+console.log(age); // 25
+```
+2. Переименование переменных
+Вы можете присваивать значения свойств новым именам.
+
+```javascript
+const user = { name: "Alice", age: 25 };
+
+const { name: userName, age: userAge } = user;
+
+console.log(userName); // "Alice"
+console.log(userAge);  // 25
+```
+3. Значения по умолчанию
+Если свойства в объекте отсутствуют, можно задать значение по умолчанию.
+
+```javascript
+const user = { name: "Alice" };
+
+const { name, age = 30 } = user;
+
+console.log(name); // "Alice"
+console.log(age);  // 30 (значение по умолчанию)
+```
+4. Оставшиеся свойства
+С помощью оператора ... можно собрать оставшиеся свойства объекта в новый объект.
+
+```javascript
+const user = { name: "Alice", age: 25, isAdmin: true };
+
+const { name, ...rest } = user;
+
+console.log(name); // "Alice"
+console.log(rest); // { age: 25, isAdmin: true }
+```
+5. Вложенные объекты
+Для работы с вложенными объектами можно использовать вложенную деструктуризацию.
+
+```javascript
+const user = {
+  name: "Alice",
+  details: {
+    age: 25,
+    country: "USA"
+  }
+};
+
+const { details: { age, country } } = user;
+
+console.log(age);    // 25
+console.log(country); // "USA"
+```
+6. Деструктуризация в параметрах функции
+Деструктуризацию можно использовать для обработки аргументов функции.
+
+```javascript
+function greet({ name, age }) {
+  console.log(`Hello, ${name}! You are ${age} years old.`);
+}
+
+const user = { name: "Alice", age: 25 };
+greet(user);
+// "Hello, Alice! You are 25 years old."
+```
+#### Особенности
+Порядок не имеет значения: В отличие от массивов, порядок свойств в объекте не важен.
+
+```javascript
+const user = { name: "Alice", age: 25 };
+const { age, name } = user;
+
+console.log(name); // "Alice"
+console.log(age);  // 25
+```
+Значения по умолчанию работают только при отсутствии свойства: Если свойство присутствует, даже если оно undefined, значение по умолчанию не применяется.
+
+```javascript
+const user = { name: "Alice", age: undefined };
+const { age = 30 } = user;
+
+console.log(age); // undefined (а не 30)
+```
+#### Итог
+Деструктуризация объектов позволяет удобно извлекать данные из объектов и упрощает код, особенно при работе с большими структурами данных.
+
+# Деструктуризация с изменением имен переменных в объектах
+При деструктуризации объектов в JavaScript можно переименовывать переменные, чтобы свойства объекта были присвоены переменным с другим именем.
+
+Синтаксис
+```javascript
+const { oldKey: newVarName } = object;
+oldKey — имя свойства объекта.
+newVarName — имя переменной, в которую будет присвоено значение этого свойства.
+Примеры
+```
+1. Базовое переименование
+```javascript
+const user = { name: "Alice", age: 25 };
+
+// Извлекаем "name" и сохраняем в переменную userName
+const { name: userName, age: userAge } = user;
+
+console.log(userName); // "Alice"
+console.log(userAge);  // 25
+```
+2. Переименование с использованием значений по умолчанию
+Если свойство отсутствует, можно задать значение по умолчанию, даже при переименовании.
+
+```javascript
+const user = { name: "Alice" };
+
+// "age" отсутствует, поэтому используется значение по умолчанию
+const { name: userName, age: userAge = 30 } = user;
+
+console.log(userName); // "Alice"
+console.log(userAge);  // 30
+```
+3. Переименование вложенных свойств
+Если объект содержит вложенные свойства, их тоже можно переименовать.
+
+```javascript
+const user = {
+  name: "Alice",
+  details: {
+    age: 25,
+    country: "USA"
+  }
+};
+
+// Извлекаем "details.age" и присваиваем в userAge
+const { details: { age: userAge, country: userCountry } } = user;
+
+console.log(userAge);    // 25
+console.log(userCountry); // "USA"
+```
+Преимущества переименования переменных
+Удобство при конфликте имен: Если в вашем коде уже есть переменные с такими же именами, переименование решает эту проблему.
+
+```javascript
+const config = { port: 3000 };
+const port = 5000;
+
+const { port: serverPort } = config;
+console.log(serverPort); // 3000
+```
+Ясность кода: Переименование может сделать код более понятным, например, для отображения смысла значения.
+
+```javascript
+const data = { id: 42, value: "example" };
+
+const { id: userId, value: userData } = data;
+
+console.log(userId);   // 42
+console.log(userData); // "example"
+```
+#### Итог
+Использование переименования переменных при деструктуризации объектов помогает избежать конфликтов имен и улучшить читаемость кода, особенно в сложных структурах данных.
+
+# Ключевое слово this в JavaScript
+this — это специальное ключевое слово в JavaScript, которое указывает на контекст выполнения текущего кода. Значение this определяется тем, как вызывается функция, и может изменяться в зависимости от ситуации.
+
+- Основные особенности
+В глобальном контексте:
+
+Вне функций, в глобальной области, this указывает на глобальный объект:
+В браузере: window.
+В Node.js: global.
+```javascript
+console.log(this); // В браузере: Window, в Node.js: global
+```
+Внутри объекта:
+
+Если this используется в методе объекта, оно указывает на сам объект.
+```javascript
+const user = {
+  name: "Alice",
+  greet() {
+    console.log(this.name); // "Alice"
+  }
+};
+
+user.greet();
+```
+В функциях:
+
+В строгом режиме ("use strict") значение this равно undefined.
+В нестрогом режиме this будет ссылаться на глобальный объект.
+```javascript
+"use strict";
+
+function showThis() {
+  console.log(this); // undefined
+}
+
+showThis();
+```
+В стрелочных функциях:
+
+Стрелочные функции не имеют своего значения this. Они используют значение this из внешнего контекста.
+```javascript
+const user = {
+  name: "Alice",
+  greet() {
+    const arrowFunction = () => {
+      console.log(this.name); // "Alice"
+    };
+    arrowFunction();
+  }
+};
+
+user.greet();
+```
+В конструкторах и классах:
+
+Внутри класса или конструктора this указывает на создаваемый объект.
+```javascript
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello, ${this.name}`);
+  }
+}
+
+const user = new User("Alice");
+user.greet(); // "Hello, Alice"
+```
+При явном задании контекста:
+
+Методы call, apply и bind позволяют явно задавать контекст для this.
+```javascript
+function greet() {
+  console.log(this.name);
+}
+
+const user = { name: "Alice" };
+
+greet.call(user); // "Alice"
+greet.apply(user); // "Alice"
+
+const boundGreet = greet.bind(user);
+boundGreet(); // "Alice"
+```
+#### Примеры
+1. Глобальный контекст
+```javascript
+console.log(this); // В браузере: Window, в Node.js: global
+```
+2. Метод объекта
+```javascript
+const user = {
+  name: "Alice",
+  greet() {
+    console.log(this.name);
+  }
+};
+
+user.greet(); // "Alice"
+```
+3. Стрелочная функция
+```javascript
+const user = {
+  name: "Alice",
+  greet() {
+    const arrow = () => console.log(this.name);
+    arrow(); // "Alice"
+  }
+};
+
+user.greet();
+```
+4. this в классах
+```javascript
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello, ${this.name}`);
+  }
+}
+
+const user = new User("Alice");
+user.greet(); // "Hello, Alice"
+```
+#### Итог
+- this — это динамическое значение, определяемое способом вызова функции.
+- В стрелочных функциях this наследуется из внешнего контекста.
+- Контекст this можно явно задавать с помощью call, apply или bind.
